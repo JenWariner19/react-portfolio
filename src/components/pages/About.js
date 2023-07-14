@@ -3,14 +3,12 @@ import React from 'react';
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About Me</h1>
+      <img src='./assets/headshot.jpg' alt="headshot"/>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      Motivated, efficient, detail-oriented individual with 7+ years of experience working in conference management. 
+      Skilled in working across all aspects of building a conference: planning, sponsorship management, cost analysis, customer service, and marketing. 
+      Looking for a new challenge where can I apply the skills I have learned in a different way.
       </p>
     </div>
   );
