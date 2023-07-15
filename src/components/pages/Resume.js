@@ -5,7 +5,7 @@ export default function Resume() {
     <div className="container">
       <h1>Resume</h1>
       <br></br>
-      <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1UYdAmTCj8WLt3MnMitn7z6MN2dYPCtMNDvi43mjm_uI/export?format=pdf">Download Resume</a>
+      <a href="https://docs.google.com/document/d/1UYdAmTCj8WLt3MnMitn7z6MN2dYPCtMNDvi43mjm_uI/export?format=pdf">Download Resume</a>
       <br></br>
       <br></br>
       <h3>Front-end Proficiencies</h3>
