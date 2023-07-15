@@ -23,6 +23,18 @@ const [successMessage, setSuccessMessage] = useState('');
     }
   };
 
+  const handleBlur = (inputType) => {
+    if (inputType === 'email' && !validateEmail(email)) {
+      setErrorMessage('Email is required!');
+    } else if (inputType === 'userName' && !userName) {
+      setErrorMessage('Name is required!');
+    } else if (inputType === 'message' && !message) {
+      setErrorMessage('Message is required!');
+    } else {
+      setErrorMessage('');
+    }
+  };
+
 const handleFormSubmit = (e) => {
   e.preventDefault();
 
@@ -63,13 +75,15 @@ const handleFormSubmit = (e) => {
           value={userName}
           name="userName"
           onChange={handleInputChange}
+          onBlur={() => handleBlur('userName')}
           type="text"
-          placeholder="Full Name"
+          placeholder="Name"
         />
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={() => handleBlur('email')}
           type="email"
           placeholder="Email"
         />
@@ -77,6 +91,7 @@ const handleFormSubmit = (e) => {
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={() => handleBlur('message')}
           type="text"
           placeholder="Insert Message Here"
         />
