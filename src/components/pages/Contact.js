@@ -1,13 +1,33 @@
 import React, { useState } from 'react';
-
 import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
-const [email, setEmail] = useState('');
-const [userName, setUserName] = useState('');
-const [message, setMessage] = useState('');
-const [errorMessage, setErrorMessage] = useState('');
-const [successMessage, setSuccessMessage] = useState('');
+  const styles = {
+    section: {
+      backgroundColor: "white",
+      color: "black",
+      marginTop: "20px",
+      minHeight: "50vh"
+    },
+    heading: {
+      textDecoration: "underline",
+      fontSize: "42px"
+    },
+    form: {
+      display: "block",
+      marginBottom: "15px"
+    },
+    messageInput: {
+      width: "100%",
+      height: "150px"
+    }
+  };
+
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -35,43 +55,45 @@ const [successMessage, setSuccessMessage] = useState('');
     }
   };
 
-const handleFormSubmit = (e) => {
-  e.preventDefault();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-  if (!validateEmail(email)) {
-    setErrorMessage('Email is invalid');
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      setUserName('');
+      setEmail('');
+      setMessage('');
+      return;
+    }
+
+    if (!userName) {
+      setErrorMessage('Name is required');
+      setUserName('');
+      setEmail('');
+      setMessage('');
+      return;
+    }
+
+    if (!message) {
+      setErrorMessage('Message is required');
+      setUserName('');
+      setEmail('');
+      setMessage('');
+      return;
+    }
+
+    setSuccessMessage('Thank you for reaching out. I will be in contact with you at my earliest convenience.');
     setUserName('');
     setEmail('');
     setMessage('');
-    return;
-  }
-
-  if (!userName) {
-    setErrorMessage('Name is required');
-    setUserName('');
-    setEmail('');
-    setMessage('');
-    return;
-  }
-
-  if (!message) {
-    setErrorMessage('Message is required');
-    setUserName('');
-    setEmail('');
-    setMessage('');
-    return;
-  }
-  setSuccessMessage('Thank you for reaching out. I will be in contact with you at my earliest convenience.');
-  setUserName('');
-  setEmail('');
-  setMessage('');
-};
+  };
 
   return (
-    <div className="container">
-      <h1 className="mt-10">Contact Me</h1>
+    <div style={styles.section} className="container">
+      <h1 style={styles.heading} className="mt-10">Contact Me</h1>
       <form className="form">
-      <input
+        <input
+          style={styles.form}
           value={userName}
           name="userName"
           onChange={handleInputChange}
@@ -80,6 +102,7 @@ const handleFormSubmit = (e) => {
           placeholder="Name"
         />
         <input
+          style={styles.form}
           value={email}
           name="email"
           onChange={handleInputChange}
@@ -87,14 +110,14 @@ const handleFormSubmit = (e) => {
           type="email"
           placeholder="Email"
         />
-        <input
+        <textarea
+          style={{ ...styles.form, ...styles.messageInput }}
           value={message}
           name="message"
           onChange={handleInputChange}
           onBlur={() => handleBlur('message')}
-          type="text"
           placeholder="Insert Message Here"
-        />
+        ></textarea>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (

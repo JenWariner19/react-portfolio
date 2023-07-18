@@ -6,6 +6,18 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 
 export default function Header() {
+  const styles = {
+    header: {
+      padding: "20px",
+      backgroundColor: "#2874a6",
+      color: "white",
+      borderBottom: "5px solid black",
+      marginBottom: "3px"
+    },
+    h1: {
+      margin: 0
+    }
+  };
   const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
@@ -22,11 +34,11 @@ export default function Header() {
   };
   const handlePageChange = (page) => setCurrentPage(page);
 
-    return (
-      <div>
-        <h1>Jennifer Wariner</h1>
-        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
-        {renderPage()}
-      </div>
-    );
-  }
+  return (
+    <div style={styles.header}>
+      <h1 style={styles.h1}>Jennifer Wariner</h1>
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+    </div>
+  );
+}

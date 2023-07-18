@@ -1,9 +1,22 @@
 import React from 'react';
 
 export default function About() {
+  const styles = {
+    section: {
+      backgroundColor: "white",
+      color: "black",
+      marginTop: "20px",
+      marginBottom: "10px",
+      minHeight: "50vh"
+    },
+    heading: {
+      textDecoration: "underline",
+      fontSize: "42px"
+    }
+  }
   return (
-    <div className="container">
-      <h1>About Me</h1>
+    <div style={styles.section}className="container">
+      <h1 style={styles.heading}>About Me</h1>
       <img className="mb-10" src='./assets/headshot.jpg' alt="headshot"/>
       <br></br>
       <p className="mt-10">
