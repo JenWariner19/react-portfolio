@@ -4,8 +4,8 @@ export default function Footer() {
   const styles = {
     footer: {
       padding: "20px",
-      backgroundColor: "#2874a6",
-      color: "white",
+      backgroundColor: "white",
+      color: "black",
       borderBottom: "5px solid black",
       marginBottom: "3px",
       display: "flex",
@@ -19,7 +19,8 @@ export default function Footer() {
       borderRadius: "4px",
       padding: "8px 12px",
       cursor: "pointer",
-      textDecoration: "none"
+      textDecoration: "none",
+      fontFamily: "Open Sans"
     }
   };
 

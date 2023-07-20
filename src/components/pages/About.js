@@ -3,15 +3,18 @@ import React from 'react';
 export default function About() {
   const styles = {
     section: {
-      backgroundColor: "white",
+      backgroundColor: "#EBFBED",
       color: "black",
       marginTop: "20px",
       marginBottom: "10px",
-      minHeight: "50vh"
+      minHeight: "50vh",
+      fontFamily: "Open Sans",
+      fontSize: "16px"
     },
     heading: {
       textDecoration: "underline",
-      fontSize: "42px"
+      fontSize: "42px",
+      fontFamily: "Open Sans"
     }
   }
   return (

@@ -9,13 +9,14 @@ export default function Header() {
   const styles = {
     header: {
       padding: "20px",
-      backgroundColor: "#2874a6",
-      color: "white",
-      borderBottom: "5px solid black",
+      backgroundColor: "white",
+      color: "black",
+      borderBottom: "2px solid black",
       marginBottom: "3px"
     },
     h1: {
-      margin: 0
+      margin: 0,
+      fontFamily: "Open Sans"
     }
   };
   const [currentPage, setCurrentPage] = useState('About');

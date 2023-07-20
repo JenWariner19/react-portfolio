@@ -3,10 +3,11 @@ import React from 'react';
 export default function Portfolio() {
   const styles = {
     section: {
-      backgroundColor: "white",
+      backgroundColor: "#EBFBED",
       color: "black",
       marginTop: "20px",
-      minHeight: "50vh"
+      minHeight: "50vh",
+      fontFamily: "Open Sans"
     },
     heading: {
       textDecoration: "underline",

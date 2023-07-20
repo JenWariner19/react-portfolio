@@ -6,12 +6,13 @@ function NavTabs({ currentPage, handlePageChange }) {
       color: "white",
       backgroundColor: "black",
       margin: "5px",
-      display: "flex"
+      display: "flex",
+      fontFamily: "Open Sans"
     },
     navalign: {
       justifyContent: "flex-end"
     }
-  }
+  };
 
   return (
     <ul className="nav nav-tabs" style={styles.navalign}>

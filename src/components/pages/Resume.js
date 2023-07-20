@@ -3,13 +3,14 @@ import React from 'react';
 export default function Resume() {
   const styles = {
     section: {
-      backgroundColor: "white",
+      backgroundColor: "#EBFBED",
       color: "black",
       margin: "10px",
       marginLeft: "auto",
       marginRight: "auto",
       maxWidth: "800px",
-      padding: "20px"
+      padding: "20px",
+      fontFamily: "Open Sans"
     },
     content: {
       textAlign: "left"
@@ -20,7 +21,8 @@ export default function Resume() {
     },
     heading: {
       textDecoration: "underline",
-      fontSize: "42px"
+      fontSize: "42px",
+      fontFamily: "Open Sans"
     }
   };
 
