@@ -46,7 +46,7 @@ export default function Portfolio() {
               <a href='https://pure-woodland-40877.herokuapp.com/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/homeward bound.png'
+                  src='./assets/homeward bound.png'
                   alt="homeward bound"
                 />
               </a>
@@ -61,7 +61,7 @@ export default function Portfolio() {
               <a href='https://jenwariner19.github.io/dinner-date-planner/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/dinner date planner.png'
+                  src='./assets/dinner date planner.png'
                   alt="dinner date"
                 />
               </a>
@@ -78,7 +78,7 @@ export default function Portfolio() {
               <a href='https://jenwariner19.github.io/weather-dashboard/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/weather dashboard.png'
+                  src='./assets/weather dashboard.png'
                   alt="weather dashboard"
                 />
               </a>
@@ -93,7 +93,7 @@ export default function Portfolio() {
               <a href='https://jenwariner19.github.io/daily-planner/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/daily planner.png'
+                  src='./assets/daily planner.png'
                   alt="daily planner"
                 />
               </a>
@@ -110,7 +110,7 @@ export default function Portfolio() {
               <a href='https://jenwariner19.github.io/code-quiz/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/code quiz.png'
+                  src='./assets/code quiz.png'
                   alt="code quiz"
                 />
               </a>
@@ -125,7 +125,7 @@ export default function Portfolio() {
               <a href='https://jenwariner19.github.io/password-generator/'>
                 <img
                   className="card-img-top img-fluid"
-                  src='../assets/password generator.png'
+                  src='./assets/password generator.png'
                   alt="password generator"
                 />
               </a>
