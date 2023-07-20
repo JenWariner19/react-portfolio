@@ -13,10 +13,12 @@ Created a single-page application for my portfolio using React.
 6. [Questions](#questions)
 
 ## Installation
-You can view my portfolio [here](https://fathomless-spire-01203-452b78aee54c.herokuapp.com/).
+You can view my portfolio [here](https://jenwariner19.github.io/react-portfolio/).
 
 ## Usage
+Screenshot
 
+![alt text](./public/assets/readme%20screenshot.png)
 
 ## Contributing
 N/A
